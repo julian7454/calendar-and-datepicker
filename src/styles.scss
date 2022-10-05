@@ -1,0 +1,81 @@
+.wrapper {
+  width: 480px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.calendar {
+  padding: 15px;
+  font-family: sans-serif;
+  text-align: center;
+  width: 280px;
+  border: 1px solid #eeeeee;
+  margin-top: 1px;
+  box-shadow: 4px 2px 6px -3px rgba(80,80,80,0.74);
+}
+
+.calendar-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar-list {
+  max-width: 280px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.week,
+.day {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.week {
+  font-weight: bold;
+}
+
+.day {
+  color: #eeeeee;
+
+  &.current {
+    color: #000
+  }
+  &.active {
+    color: red
+  }
+
+  &.selected {
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.calendar-list__button {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  &.selected {
+    border-radius: 50%;
+    color: #fff;
+    background: red;
+  }
+}
+
+.datePicker {
+  text-align: left;
+  input {
+    margin-left: 15px;
+  }
+}
