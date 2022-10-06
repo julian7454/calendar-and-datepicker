@@ -1,5 +1,5 @@
 .wrapper {
-  width: 480px;
+  max-width: 480px;
   padding: 15px;
   margin: 0 auto;
 }
@@ -17,6 +17,10 @@
 .calendar-title {
   display: flex;
   justify-content: space-around;
+
+  & > span {
+    cursor: pointer;
+  }
 }
 
 .calendar-list {
@@ -52,11 +56,11 @@
     color: #000
   }
   &.active {
-    color: red
+    color: #db3d44;
   }
 
   &.selected {
-    background: red;
+    background: #db3d44;
     color: #fff;
     border-radius: 50%;
   }
@@ -69,7 +73,7 @@
   &.selected {
     border-radius: 50%;
     color: #fff;
-    background: red;
+    background: #db3d44;
   }
 }
 
