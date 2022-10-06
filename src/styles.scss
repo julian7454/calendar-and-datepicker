@@ -17,9 +17,21 @@
 .calendar-title {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 0;
 
   & > span {
     cursor: pointer;
+
+    &.calendar-date {
+      width: 190px;
+      padding: 5px 0;
+
+      &:hover {
+        background: #eeeeee;
+        border-radius: 5px;
+      }
+    }
   }
 }
 
@@ -70,6 +82,10 @@
   width: 60px;
   height: 60px;
   line-height: 60px;
+  color: #eeeeee;
+  &.current {
+    color: #000;
+  }
   &.selected {
     border-radius: 50%;
     color: #fff;

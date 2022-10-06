@@ -24,6 +24,7 @@ export default function Month({
           <li
             key={month}
             className={classNames({
+              "current": true,
               "calendar-list__button": true,
               selected: date?.getMonth() + 1 === Number(month)
             })}

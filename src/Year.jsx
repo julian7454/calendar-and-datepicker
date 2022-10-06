@@ -31,6 +31,7 @@ export default function Year({
           <li
             className={classNames({
               "calendar-list__button": true,
+              current: year >= startYear && year <= endYear,
               selected: date?.getFullYear() === Number(year)
             })}
             onClick={() => {

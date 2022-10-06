@@ -15,7 +15,7 @@ export default function Head({
       <span onClick={() => setCurrentDate(addFn(-time, currentDate))}>
         <FontAwesomeIcon icon={faAngleLeft} />
       </span>
-      <span onClick={() => showType && setShowType(showType)}>{title}</span>
+      <span className="calendar-date" onClick={() => showType && setShowType(showType)}>{title}</span>
       <span onClick={() => setCurrentDate(addFn(time, currentDate))}>
         <FontAwesomeIcon icon={faAngleRight} />
       </span>
