@@ -44,6 +44,7 @@ export function getMonthCalendar(date, currentDate) {
       date: new Date(cursor),
       caurrentMonth: cursor.getMonth() === month,
       selected:
+        cursor.getFullYear() === date?.getFullYear() &&
         cursor.getMonth() === date?.getMonth() &&
         cursor.getDate() === date?.getDate(),
       caurrentDay:
