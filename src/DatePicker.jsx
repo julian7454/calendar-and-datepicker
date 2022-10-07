@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { getDateString, isValidDate } from "./util";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 
 export default function DatePicker({ date, setDate, setShow }) {
   const [input, setInput] = useState("");
@@ -16,7 +14,7 @@ export default function DatePicker({ date, setDate, setShow }) {
 
   return (
     <div className="datePicker">
-      <FontAwesomeIcon icon={faCalendarDays} />
+      <i className="fa-calendar-days fa-solid"></i>
       <input
         type="text"
         name="date"
